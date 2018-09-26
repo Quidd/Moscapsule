@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.libraries    = "ssl", "crypto"
   s.requires_arc = true
-  s.xcconfig     = {
+  s.pod_target_xcconfig = {
     'SWIFT_VERSION' => '4.0',
     'OTHER_CFLAGS' => '-DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK',
     'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/Public/OpenSSL-Universal"',
